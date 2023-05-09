@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Roboto+Slab:wght@100;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body,
+#root {
+  @apply w-full h-screen min-w-full  box-border  text-[#262626] font-customFamily ;
+}
+
+@layer base {
+    .scrollContainer > div {
+      @apply flex-1   overflow-x-hidden  overflow-y-auto scrollbar scrollbar-thumb-[#aaaaaa] scrollbar-thumb-rounded-md scrollbar-w-2 
+    }
+}
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
